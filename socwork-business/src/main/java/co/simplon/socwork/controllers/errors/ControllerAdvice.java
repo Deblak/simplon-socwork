@@ -16,5 +16,4 @@ public class ControllerAdvice extends ResponseEntityExceptionHandler {
     protected ResponseEntity<Object> handleBadCredentialException(BadCredentialsException ex, WebRequest request) {
 	return super.handleExceptionInternal(ex, null, new HttpHeaders(), HttpStatus.UNAUTHORIZED, request);
     }
-
 }
